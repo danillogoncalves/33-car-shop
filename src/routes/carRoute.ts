@@ -13,5 +13,6 @@ carRoute.post('/', carController.create);
 carRoute.get('/:id', carController.readOne);
 carRoute.get('/', carController.read);
 carRoute.put('/:id', carController.update);
+carRoute.delete('/:id', carController.delete);
 
 export default carRoute;

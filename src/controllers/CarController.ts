@@ -27,6 +27,6 @@ export default class CarController {
 
   delete = async (req: Request, res: Response<ICar>): Promise<void> => {
     const result = await this._carService.delete(req.params.id);
-    res.status(200).json(result);
+    res.status(204).json(result);
   };
 }
