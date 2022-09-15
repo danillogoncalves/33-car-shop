@@ -80,7 +80,7 @@ describe('Car Model', () => {
     afterEach(() => {
       Sinon.restore();
     });
-    it('Car updated with success.', async () => {
+    it('Car deleted with success.', async () => {
       const car = await carModel.delete(carMockWithId._id);
       expect(car).to.be.deep.equal(carMockWithId);
     });
