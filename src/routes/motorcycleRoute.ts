@@ -10,5 +10,6 @@ const motorcycleService = new MotorcycleService(motorcycleModel);
 const motorcycleController = new MotorcycleController(motorcycleService);
 
 motorcycleRoute.post('/', motorcycleController.create);
+motorcycleRoute.get('/', motorcycleController.read);
 
 export default motorcycleRoute;
