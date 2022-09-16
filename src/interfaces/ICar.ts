@@ -9,8 +9,8 @@ const CarZodSchema = z.object({
 // https://stackoverflow.com/questions/41385059/possible-to-extend-types-in-typescript
 // export type ICar = z.infer<typeof CarZodSchema> & IVehicle;
 
-const carPlusVahicle = CarZodSchema.merge(VehicleZodSchema);
+const carExtendsVehicle = CarZodSchema.merge(VehicleZodSchema);
 
-type ICar = z.infer<typeof carPlusVahicle>;
+type ICar = z.infer<typeof carExtendsVehicle>;
 
-export { ICar, carPlusVahicle };
+export { ICar, carExtendsVehicle };
