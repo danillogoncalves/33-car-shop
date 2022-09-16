@@ -19,4 +19,9 @@ export default class MotorcycleController {
     const result = await this._motorcycleService.readOne(req.params.id);
     res.status(200).json(result);
   };
+
+  update = async (req: Request, res: Response<IMotorcycle>): Promise<void> => {
+    const result = await this._motorcycleService.update(req.params.id, req.body);
+    res.status(200).json(result);
+  };
 }
