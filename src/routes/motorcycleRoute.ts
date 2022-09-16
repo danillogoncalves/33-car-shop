@@ -13,5 +13,6 @@ motorcycleRoute.post('/', motorcycleController.create);
 motorcycleRoute.get('/:id', motorcycleController.readOne);
 motorcycleRoute.get('/', motorcycleController.read);
 motorcycleRoute.put('/:id', motorcycleController.update);
+motorcycleRoute.delete('/:id', motorcycleController.delete);
 
 export default motorcycleRoute;
