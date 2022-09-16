@@ -2,7 +2,7 @@ import express from 'express';
 import 'express-async-errors';
 import errorHandler from './middlewares/error';
 import carRoute from './routes/carRoute';
-import motorcycleRoute from './routes/motorcycle';
+import motorcycleRoute from './routes/motorcycleRoute';
 
 const app = express();
 
