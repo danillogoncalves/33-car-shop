@@ -97,7 +97,7 @@ describe('Car Service.', () => {
       }
     });
   });
-  describe('Deleting a car..', () => {
+  describe('Deleting a car.', () => {
     const carModel = new CarModel();
     const carService = new CarService(carModel);
     before(() => {
